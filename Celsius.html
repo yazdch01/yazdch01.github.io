@@ -1,35 +1,33 @@
-<html> 
-<heaad> Convert Celsius to Fahrenheit  </heaad>
-<body> 
-<label for= "thebox"> Name</label>
-<input type="text" id="thebox"> 
-<button onclick="hola();"> Convert</button>
-<h1 id= "output"></h1>
 
-<script> 
-  hola=function() { 
-    thebox= document.querySelector ("#thebox");
-    celcius= thebox.value;
-    result= document.querySelector ("#output");
-    result.innerHTML= "celcius * 1.8 +32" ;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
+<html>
+   <head>
+     <title>convert celsius to fahrenheit</title>
+   </head>
+     
+   <body>
+     <label for="celsius">Convert Celcius to Fahrenheit</label>
+ <input type="text" min="-40" max="140" id="celsius" onclick="changetemp()" value="0" /> <br>
+  <button onclick="changetemp();"> Convert </button> 
+
+  <h1 id="original">0 Degrees C</h1>
+ <h1 id="tempf">32 Degrees F</h1>
+
+
+
+ <script>
+  changetemp = function() {
+ tempc=document.querySelector('#celsius').value;
+ original=document.querySelector('#original');
+original.innerHTML=tempc + " Degree C" ;
+
+  tempf = tempc*1.8 + 32;
+temph1= document.querySelector("#tempf");
+temph1.innerHTML= tempf + " Degree F";
+ 
+}
+
 </script>
-</body> 
-</html> 
+</body>
+   </html>
 
 
-
-
-
-
-
-</body> 
-</html> 
