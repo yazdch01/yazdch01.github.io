@@ -5,23 +5,23 @@
     
     
     <body> 
-        <lable for= "weight"> Enter Weight in pounds</lable> 
-        <input type="text" min="0" max="4000" id="weight" onclick="findbmi()" value="0"/>       
-        <lable for= "height"> Enter Height in Inches</lable> 
-        
-        
-        <input type="text" min="0" max="400" id="height" onclick="findbmi()" value="0"/>
-        <button onclick= "findbmi();"> Get your BMI </button> 
-        
-        
-        <h2 id="woriginal"> 0 gram </h2> 
-        <h2 id="horiginal"> 0 centimeter</h2> 
-        <h1 id= "result"> 0 YOUR BMI< /h1> 
-            
-            
-            <script> 
-                findbmi= function() { 
-                    wvalue= document.querySelector('#weight').value;
+    <lable for= "weight"> Enter Weight in pounds</lable> 
+    <input type="text" min="0" max="4000" id="weight" onclick="findbmi()" value="0"/>       
+    <lable for= "height"> Enter Height in Inches</lable> 
+    
+    
+    <input type="text" min="0" max="400" id="height" onclick="findbmi()" value="0"/>
+    <button onclick= "findbmi();"> Get your BMI </button> 
+    
+    
+    <h2 id="woriginal"> 0 gram </h2> 
+    <h2 id="horiginal"> 0 centimeter</h2> 
+    <h1 id= "result"> 0 YOUR BMI< /h1> 
+
+
+    <script> 
+    findbmi= function() { 
+    wvalue= document.querySelector('#weight').value;
                     weightoriginal= document.querySelector('#woriginal').value;
                     woriginal.innerHTML= wvalue+"Grams"; 
                     
