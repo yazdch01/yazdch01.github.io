@@ -1,4 +1,24 @@
- <script>
+<html>
+   <head>
+       <title> BMI calculator</title>
+   </head>
+     
+     <body>
+         <label for ="heighti"> Please enter your height in inches:</label>
+         <input type ="text" id="heighti" min="0" max="200"/><br>
+         
+         <label for ="weighti"> Please enter your weight in pounds:</label>
+          <input type="text" id="weighti" min="0"  max="400"/><br>
+         
+         <button onclick= "calculate();"> Compute BMI </button>
+         
+         <h1 id="BMI"></h1>
+         
+         <h1 id="message"></h1>
+         
+         
+         
+     <script>
          calculate = function(){
              var height,weight;
              
@@ -34,5 +54,4 @@
      </script>
    </body>
  </html>
-
 
