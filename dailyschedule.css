@@ -1,9 +1,97 @@
-table {
-    
-    
+<html> 
+    <head> My Daily Schedule</head> 
+    <style> 
+        caption{ family-font: fantasy; } 
+       
+        
+        table{ 
+            border-style: solid; 
+            border-color: blue; 
+            border-width: 4px; 
+             border-spacing:none; 
+        } 
+         
+    th{ 
+        border-style: solid; 
+            border-color: blue; 
+            border-width: 3px; 
+             border-spacing:none; 
+        
     }
+        td{ 
+            border-style: solid; 
+            border-color: black; 
+            border-width: 2px; 
+             border-spacing:none; 
+        
+        } 
+        .chill { 
+            background-color: lightgreen; 
+            border-color: purple; 
+            border-style: solid;
+            border-width: 3px; 
+        } 
+    </style> 
     
-    tr{
-    
-    
-    }
+    <table> 
+        <caption> Daily Schedule</caption> 
+        <tr> 
+            <th> <i> Hours</i> </th> 
+            <th> Monday </th>
+            <th> Tuesday</th> 
+            <th> Wednesday</th> 
+            <th> Thursday</th> 
+            <th> Friday</th> 
+            <th> Saturday</th> 
+            <th> Sunday</th> 
+        </tr> 
+        <tr> 
+            <td> <i> 8-9</i> </td> 
+            <td> Breakfast </td>
+            <td> Breakfast</td> 
+            <td> Breakfast</td> 
+            <td> Breakfast</td> 
+            <td> Breakfast</td> 
+            <td rowspan=2> Sleeping </td> 
+            <td rowspan=2> Sleeping</td> 
+        </tr>
+        <tr> 
+            <td> <i> 9-10</i> </td> 
+            <td rowspan=2> Math Class and CS preparation </td>
+            <td rowspan=2> Work </td> 
+            <td rowspan=2> Math Class and CS preparation </td> 
+            <td rowspan=2> Work </td> 
+            <td rowspan=2> Math Class and CS preparation </td>
+        </tr>
+        
+        <tr> 
+            <td> <i> 10-11</i> </td> 
+            
+         
+            <td rowspan=10> Skype and Chill </td> 
+            <td rowspan=8> Home Work </td>
+        </tr>
+         <tr> 
+            <td> <i> 11-12</i> </td> 
+            <td> CS 130 Class</td>
+            <td rowspan=2> Lunch </td> 
+            <td> CS 130 Class</td>
+            <td rowspan=2> Lunch </td>
+            <td> CS 130 Class</td>
+        </tr>
+        
+        <tr> 
+            <td> <i> 12-13</i> </td> 
+            <td> Math Homework</td>
+            <td> Math Homework</td> 
+            <td> Math Homework</td>
+            
+        </tr>
+        
+    </table> 
+            
+               
+        
+        
+</html> 
+  
