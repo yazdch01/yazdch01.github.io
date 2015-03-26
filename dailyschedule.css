@@ -31,6 +31,12 @@
             border-style: solid;
             border-width: 3px; 
         } 
+        .sleeping {
+            background-color: orange;
+        }
+        .hw { 
+            background-color: blue;
+        }
     </style> 
     
     <table> 
@@ -68,7 +74,7 @@
             <td> <i> 10-11</i> </td> 
             
          
-            <td rowspan=10> Skype and Chill </td> 
+            <td rowspan=10  class=chill > Skype and Chill </td> 
             <td rowspan=8> Home Work </td>
         </tr>
          <tr> 
@@ -133,7 +139,7 @@
         </tr>
         <tr> 
             <td> <i> 12pm-08:20 am </i> </td> 
-            <td rowspan=7> <h2>SLEEPING</h2> </td> 
+            <td colspan=7 class=sleeping> <h2>SLEEPING</h2> </td> 
             </tr> 
         
         
