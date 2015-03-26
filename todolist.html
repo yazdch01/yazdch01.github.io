@@ -1,0 +1,90 @@
+<html>
+
+    <head>
+        <style>
+            .high {
+                color:red;
+            }
+            
+            .medium {
+                color:blue;
+            }
+            
+            .low {
+                color:black;
+            }
+                
+            li {
+                list-style-type: none;
+            }
+            
+            .done {
+                text-decoration: line-through;
+            }
+            
+        </style>
+        
+        <script>
+            checkoff = function(){
+                if (this.checked)
+                   this.parentNode.classList.add("done");
+                else
+                   this.parentNode.classList.remove("done");
+            }
+            
+            clearlist = function(){
+                thelist = document.querySelector("#todolist");
+                thelist.innerHTML="";
+            }
+        
+            additem=function(){
+                theitem = document.querySelector("#item");
+                te = document.createTextNode(theitem.value);
+                li = document.createElement("li")
+                
+                box = document.createElement("input");
+                box.type = "checkbox";
+                box.onclick = checkoff;
+                
+                li.appendChild(box);
+                li.appendChild(te);
+                thelist=document.querySelector("#todolist");
+                thelist.appendChild(li);
+                theitem.value="";
+                
+                priority = document.querySelector("#priority");
+                i = priority.selectedIndex;
+                c = priority.options[i].value;
+                
+                li.classList.add(c);
+                
+            }
+        </script>
+     </head>
+            
+     <body>
+
+         
+         <label for="item">Item</label>
+         <input type="text" id="item">
+         
+         <select id="priority">
+             <option>Low</option>
+             <option>Medium</option>
+             <option>High</option>
+         </select>
+         
+         <button onclick="additem()">Add It</button>
+                     
+            <h1>To Do List</h1>
+            
+            <ul id="todolist">
+            </ul>
+         
+         <button onclick="clearlist()">Clear List</button>
+            
+    </body>
+     
+
+
+</html>
