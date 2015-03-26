@@ -87,6 +87,56 @@
             <td> Math Homework</td>
             
         </tr>
+        <tr> 
+            <td> <i> 1pm-2pm</i> </td> 
+            <td> Lunch </td>
+            <td rowspan=2> Religion Class </td>
+            <td>Lunch</td>
+            <td rowspan=2> Religion Class </td>
+            <td>Lunch</td>
+            
+        </tr>
+         <tr> 
+            <td> <i> 2pm-3pm</i> </td> 
+            <td> Paideia Class preparation </td>
+            <td> Paideia Class preparation </td>
+            <td> Paideia Class preparation </td> 
+        </tr>
+         <tr> 
+            <td> <i> 3pm-4pm</i> </td> 
+            <td> Paideia Class  </td>
+            <td rowspan=2> Doing Homework </td>
+            <td> Paideia Class  </td>
+            <td rowspan=2> Doing Homework </td>
+             <td> Paideia Class  </td>
+        </tr>
+        <tr> 
+            <td> <i> 4pm-6pm</i> </td> 
+            <td> Gym  </td>
+             <td> Gym  </td>
+              <td> Gym  </td>
+        </tr>
+        <tr> 
+            <td> <i> 6pm-8pm</i> </td> 
+            <td colspan=7> Dinner </td>
+        </tr>
+        <tr> 
+            <td> <i> 8pm-10pm</i> </td> 
+            <td colspan=4> Workstudy   </td>
+             <td rowspan=2>  Chill out </td>
+              <td> Workstudy  </td>
+        </tr>
+        <tr> 
+            <td> <i> 10pm-12pm</i> </td> 
+            <td rowspan=4> Homework </td>
+             <td> Homework  </td>
+        </tr>
+        <tr> 
+            <td> <i> 12pm-08:20 am </i> </td> 
+            <td rowspan=7> <h2>SLEEPING</h2> </td> 
+            </tr> 
+        
+        
         
     </table> 
             
