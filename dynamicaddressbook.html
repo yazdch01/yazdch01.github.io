@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Address Book</title>
+    
+    <style>
+      #fn,#ln,#phone,#email {
+        display:block;
+      }
+      
+      table{
+        border-style:solid;
+        border-width: 3px;
+        border-color: black;
+      }
+      
+      td {
+        border-style:dotted;
+        border-width: 2px;
+        border-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Address Book</h1>
+    <label for="fn">First Name</label>
+    <input type="text" id="fn">
+    <label for="ln">Last Name</label>
+    <input type="text" id="ln">
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone">
+    <label for="email">EMail</label>
+    <input type="text" id="email">
+    
+    <button onclick="addentry();">Add Item</button>
+    
+    <table id="addresstable">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>EMail</th>
+      </tr>
+    </table>
+    
+    <script>
+    addentry=function(){
+      fn=document.querySelector("#fn").value;
+      ln=document.querySelector("#ln").value;
+      phone=document.querySelector("#phone").value;
+      email=document.querySelector("#email").value;
+      
+      newrow = document.createElement("tr");
+      td1=document.createElement("td");
+      td1.innerHTML=fn;
+      td1.onclick=editfn;
+      td2=document.createElement("td");
+      td2.innerHTML=ln;
+      td3=document.createElement("td");
+      td3.innerHTML=phone;
+      td4=document.createElement("td");
+      td4.innerHTML=email;
+      newrow.appendChild(td1);
+      newrow.appendChild(td2);
+      newrow.appendChild(td3);
+      newrow.appendChild(td4);
+      table=document.querySelector("#addresstable");
+      table.appendChild(newrow);
+      
+      document.querySelector("#fn").value="";
+      document.querySelector("#ln").value="";
+      document.querySelector("#phone").value="";
+      document.querySelector("#email").value="";
+      
+    }
+    
+    editfn=function(){
+      fn=document.querySelector("#fn").value;
+      this.innerHTML=fn;
+      
+    }
+      
+      
+    </script>
+  </body>
+
+</html>
