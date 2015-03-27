@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <h3>Slide the scales below:</h3>
+    
+    <label for="wbox">Weight</label>
+    <input type="range" id="wbox" value="100" min="50" max="300" onmousemove="calculatebmi();">
+    <label for="hbox">Height</label>
+    <input type="range" id="hbox" value="50" min="30" max="96" onmousemove="calculatebmi();">
+    
+    <h1 id="weightout">Weight: 100</h1>
+    <h1 id="heightout">Height: 50</h1>
+    <h1 id="bmiout">BMI: </h1>
+    <h1 id="message"></h1>
+    
+    <script>
+      calculatebmi=function(){
+        weight=document.querySelector("#wbox").value;
+        height=document.querySelector("#hbox").value;
+        
+        bmi=(weight*703)/(height*height)
+        
+        document.querySelector("#weightout").innerHTML="Weight: " + weight;
+        document.querySelector("#heightout").innerHTML="Height: " + height;
+        document.querySelector("#bmiout").innerHTML="BMI: " + bmi;
+        
+        message = document.querySelector("#message");
+        if (bmi<19)
+           message.innerHTML="Too Low";
+        else
+            if (bmi<=24)
+              message.innerHTML="OK";
+            else
+              message.innerHTML="Too High";
+      }
+    </script>
+  </body>
+</html>
