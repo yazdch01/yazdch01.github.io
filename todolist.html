@@ -5,7 +5,7 @@
         body{
             background-color: 00FFFF;
         }
-        .centered{ 
+        #centered{ 
             position: fixed;
             top:50%;
             left:50%;
@@ -70,26 +70,26 @@
         </script>
      </head>
             
-     <body id="centered">
+     <body>
 
          
-         <label for="item">Item</label>
+         <label class="centered" for="item">Item</label>
          <input type="text" id="item">
          
-         <select id="priority">
+         <select class="centered" id="priority">
              <option>Low</option>
              <option>Medium</option>
              <option>High</option>
          </select>
          
-         <button onclick="additem()">Add It</button>
+         <button class="centered" onclick="additem()">Add It</button>
                      
-            <h1> My To Do List</h1>
+            <h1 class="centered"> My To Do List</h1>
             
             <ul id="todolist">
             </ul>
          
-         <button onclick="clearlist()">Clear up my List</button>
+         <button class="centered" onclick="clearlist()">Clear up my List</button>
             
     </body>
      
